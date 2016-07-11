@@ -1,4 +1,5 @@
 LOCAL_PATH:= $(call my-dir)
+
 include $(CLEAR_VARS)
 
 ifeq ($(shell if [ $(PLATFORM_SDK_VERSION) -ge 9 ]; then echo big9; fi),big9)
@@ -6,8 +7,8 @@ LOCAL_C_INCLUDES += $(JNI_H_INCLUDE) \
     frameworks/native/include/media/openmax\
     frameworks/native/include/media/hardware\
     frameworks/av/include\
-    vendor/marvell/generic/libstagefrighthw/renderer\
-    vendor/marvell/generic/ipplib/openmax/include\
+    vendor/marvell/libstagefrighthw/renderer\
+    vendor/marvell/ipplib/openmax/include\
     frameworks/base/include/binder\
     frameworks/base/include/utils
 

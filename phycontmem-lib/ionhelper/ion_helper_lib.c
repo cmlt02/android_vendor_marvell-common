@@ -47,7 +47,7 @@ struct ion_args *ion_malloc(int size, int attrs)
 
 	memset(&ion_data, 0, sizeof(struct ion_allocation_data));
 	/* align to PAGE_SIZE */
-	ion_data.len = (size + (PAGE_SIZE - 1)) & ~(PAGE_SIZE - 1);
+	ion_data.len = (size + (PAGE_SIZE - 1))& ~(PAGE_SIZE - 1);
 	ion_data.align = PAGE_SIZE;
     /* ion_data.heap_id_mask = ION_HEAP_TYPE_DMA_MASK; */
     ion_data.heap_id_mask = ION_HEAP_CARVEOUT_MASK;

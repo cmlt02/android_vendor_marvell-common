@@ -5,7 +5,7 @@
 
 #include "stagefright_mrvl_omx_plugin.h"
 #include <media/stagefright/foundation/ADebug.h> /* Define CHECK_EQ */
-#include "OMX_IppDef.h"
+//#include "OMX_IppDef.h"
 #include <binder/IMemory.h>
 #include <utils/RefBase.h>
 #include <sys/ioctl.h>
