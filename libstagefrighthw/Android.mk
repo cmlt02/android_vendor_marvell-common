@@ -4,4 +4,4 @@ STAGEFRIGHTHW_TOP := $(LOCAL_PATH)
 
 include $(CLEAR_VARS)
 
-#include $(STAGEFRIGHTHW_TOP)/entry/Android.mk
+include $(STAGEFRIGHTHW_TOP)/entry/Android.mk
